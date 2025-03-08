@@ -45,5 +45,3 @@ ax.set_xticks([])
 ax.set_yticks([])
 ax.set_frame_on(False)
 plt.show()
-
-# Код готов для копирования и загрузки в GitHub! 😊
