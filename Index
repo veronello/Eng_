@@ -1,0 +1,49 @@
+# Повторное создание кода после сброса состояния
+
+import matplotlib.pyplot as plt
+
+# Создание упражнений в виде интерактивного вывода (для копирования в GitHub)
+exercises = [
+    ("Выберите правильный вариант:", 
+     ["She admitted ___ the money.", 
+      "a) to steal", 
+      "b) stealing", 
+      "c) having stolen"], "c) having stolen"),
+
+    ("Заполните пропуск, используя перфектный инфинитив:", 
+     ["He regretted ___ so much during the party.", 
+      "(подсказка: regret + having + V3)"], "having drunk"),
+
+    ("Какой вариант правильный?", 
+     ["She denied ___ the secret to anyone.", 
+      "a) telling", 
+      "b) to tell", 
+      "c) having told"], "c) having told"),
+
+    ("Выберите подходящий вариант:", 
+     ["They apologized for ___ late.", 
+      "a) to arrive", 
+      "b) arriving", 
+      "c) having arrived"], "c) having arrived"),
+
+    ("Дополните предложение правильной формой глагола:", 
+     ["She was embarrassed about ___ that silly joke.", 
+      "(подсказка: embarrassed about + having + V3)"], "having made")
+]
+
+# Вывод упражнений
+for i, (title, options, answer) in enumerate(exercises):
+    print(f"\033[95m{i+1}. {title}\033[0m")  # Розовый цвет заголовка
+    for line in options:
+        print(f"    {line}")
+    print(f"\033[94mОтвет: {answer}\033[0m\n")  # Голубой цвет ответа
+
+# Графика: цветной баннер
+fig, ax = plt.subplots(figsize=(6, 1))
+ax.text(0.5, 0.5, "Practice Time!", fontsize=20, ha='center', va='center', color='#FF69B4', fontweight='bold')
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_frame_on(False)
+plt.show()
+
+# Код готов для копирования и загрузки в GitHub! 😊
